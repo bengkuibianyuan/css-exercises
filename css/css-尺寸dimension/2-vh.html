@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 10px;
+        }
+        .container{
+           height: 100vh;
+           width: 30vw;
+           margin: 0 auto;
+           font-size: 2rem;
+           background-color: bisque;
+        }
+        .box{
+            height: 20vh;
+            line-height: 20vh;
+            text-align: center;
+            font-size: 2em;
+        }
+        .container .box:nth-child(odd){
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">20%</div>
+        <div class="box">40%</div>
+        <div class="box">60%</div>
+        <div class="box">80%</div>
+        <div class="box">100%</div>
+    </div>
+</body>
+<!-- 
+    vh表示视口（viewport）高度的百分之1：v:表示viewport  h:表示height
+    vw：表示视口（viewport）高度的百分之1 v:表示viewport  w:表示width
+    viewport：视口
+    1.视口是什么？
+    网页的可见区域。
+    vh：virewport
+    2.像素是什么？
+    会发光的二极管。
+    逻辑像素是信息（颜色值和坐标信息）
+    物理像素接受到逻辑像素的信息，反馈真实存在的二极管。
+    一个像素通常在0.3毫米左右
+
+    3.与尺寸相关的属性
+    height
+    min-height
+    max-height
+
+    width
+    min-width
+    max-width
+
+    line-height
+    font-size
+    border
+ -->
+</html>

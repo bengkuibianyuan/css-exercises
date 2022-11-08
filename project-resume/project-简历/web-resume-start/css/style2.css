@@ -1,0 +1,474 @@
+/* *************重置浏览器默认样式*********** */
+/* 1.清除边距 2.修改盒模型规则*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* 全局样式 */
+:root {
+    /* 颜色变量: */
+    --primry-color: #00a78e;
+    --black: #000;
+    --white: #fff;
+    --secondary-color: #f7f7f7;
+    --fuzhi-color: #636f87;
+    --black-alpha-100: 0 6px 0 0 rgba(0, 0, 0, .5);
+    /* 尺寸值： */
+    --padding0: 0px;
+    --padding80: 80px;
+    --padding10: 10px;
+    /* 字号 */
+    --x-large-font:3rem;
+    --x-large-font:2rem;
+    --large-font:1.5rem;
+    --normal-font:1rem;
+    --small-font:0.875rem;
+}
+/* main {
+    background-color: rgb(68, 124, 166);
+}
+
+footer {
+    background-color: var(--primry-color);
+    color: rgb(255, 255, 255);
+} */
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.odd {
+    background-color: rgb(243, 243, 243)
+}
+
+.even {
+    background-color: aliceblue;
+}
+
+.padding150 {
+    padding: 50px 0;
+}
+
+/******************** header*****************/
+header {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    z-index: 10000000000000000000;
+    background-color: rgba(95, 158, 160, .5);
+    height: 50px;
+    line-height: 50px;
+}
+
+header .logo {
+    width: 50%;
+    /* margin-right: -50px; */
+    position: relative;
+}
+
+header h5 {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    font-size: 25px;
+}
+
+header span {
+    color: var(--primry-color);
+
+}
+
+header .container {
+    padding: 0;
+}
+
+header nav {
+    width: 50%;
+}
+
+header a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/***********登录区域***********  */
+/* *********背景矩形************************ */
+.juxing {
+    position: absolute;
+    height: 1030px;
+    width: 60%;
+    background-color: var(--primry-color);
+    right: -180px;
+    top: -130px;
+    transform: skew(20deg);
+}
+
+/***********登录区域***********  */
+main h4,
+h2 {
+    color: var(--primry-color);
+    margin-top: 20px;
+}
+
+main h4 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+main h1 span {
+    font-size: 36px;
+}
+
+main .col .p1 {
+    color: rgba(0, 0, 0, .5);
+    margin-top: 20px;
+}
+
+main .col .btn {
+    margin-top: 20px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 25%;
+    background-color: var(--primry-color);
+    color: aliceblue;
+    font-weight: bold;
+}
+
+main .dingwei {
+    position: relative;
+    height: 800px;
+}
+
+main .denglu-1 {
+    position: absolute;
+    left: 0px;
+    top: 160px;
+}
+
+main .denglu-img {
+    position: absolute;
+    left: 400px;
+    bottom: -50px;
+    z-index: 1000;
+}
+
+main .denglu-img img {
+    height: 650px;
+}
+
+/************关于我****************  */
+.guanyu {
+    height: 800px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.guanyu .guanyu-img img {
+    height: 600px;
+    z-index: 500;
+    position: absolute;
+}
+
+.guanyu-div {
+    width: 380px;
+    height: 500px;
+    border: 20px solid var(--primry-color);
+    position: absolute;
+    left: 0;
+    bottom: 180px;
+
+}
+
+.guanyu .guanyu-jianjie {
+    font-family: "黑体";
+    position: absolute;
+    right: -200px;
+    bottom: 280px;
+}
+
+.guanyu .guanyu-jianjie h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.guanyu .guanyu-jianjie span {
+    color: #aaa;
+    font-size: 30px;
+}
+
+.guanyu .guanyu-jianjie ul {
+    list-style: none;
+    font-size: 18px;
+}
+
+.guanyu .guanyu-jianjie ul li {
+    margin-top: 10px;
+}
+
+/**************** 个人技能 ******************/
+.gereng .gereng-1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.gereng .gereng-1 h2 {
+    font-size: 40px;
+    font-family: "黑体";
+}
+
+.gereng .gereng-1 span {
+    color: #aaa;
+    text-align: center;
+    font-size: 25px;
+}
+
+.gereng .gereng-2 {
+    margin-top: 70px;
+}
+
+.gereng .gereng-2 .lan1 {
+    margin-top: 100px;
+    width: 550px;
+    margin-right: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    text-indent: 2em;
+}
+
+.gereng .gereng-2 .lan2 {
+    margin-left: 70px;
+}
+
+.gereng .gereng-2 .lan2 .progress {
+    margin-top: 30px;
+}
+
+.gereng .gereng-2 .lan2 .progress p {
+    margin-top: 20px;
+    color: rgb(101, 101, 101);
+    font-weight: bold;
+    display: inline;
+}
+
+.gereng .gereng-2 .lan2 .progress label {
+    margin-left: 50px;
+    background-color: rgb(78, 78, 78);
+    color: rgb(219, 219, 219);
+    width: 50px;
+    height: 30px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.gereng .gereng-2 .lan2 .progress #h5 {
+    display: block;
+    height: 30px;
+    width: 350px;
+}
+
+/* ******************学习经历************** */
+.jingli .jingli-1 {
+    text-align: center;
+}
+
+.jingli .jingli-1 span {
+    font-weight: bold;
+    font-size: 25px;
+    color: #aaa;
+}
+
+.jingli .jingli-1 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "黑体";
+}
+
+.jingli .jingli-2 li {
+    box-shadow: 0px 0px 7px rgba(126, 126, 126, 0.5);
+    /* border: 1px solid black; */
+    height: 170px;
+    width: 300px;
+    margin-top: 50px;
+    font-family: "黑体";
+    border-radius: 10%;
+}
+
+.jingli .jingli-2 ul {
+    list-style: none;
+}
+
+.jingli .jingli-2 li h3 {
+    padding: 10px 0 1px 20px;
+}
+
+.jingli .jingli-2 li p {
+    padding: 10px;
+}
+
+/**********************作品集*******************  */
+.zuoping .zuoping-1 {
+    text-align: center;
+}
+
+.zuoping .zuoping-1 span {
+    font-weight: bold;
+    font-size: 25px;
+    color: #aaa;
+}
+
+.zuoping .zuoping-1 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "黑体";
+    margin-bottom: 70px;
+}
+
+.zuoping .zuoping-2 {
+    width: 700px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.zuoping .zuoping-2 span {
+    padding: 20px;
+}
+
+.zuoping .zuoping-3 {
+    margin: 0 auto;
+}
+
+.zuoping .zuoping-3 i {
+    font-size: 60px;
+}
+
+.zuoping .zuoping-3 ul {
+    margin-top: 60px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zuoping .zuoping-3 li {
+    text-align: center;
+    width: 380px;
+    height: 300px;
+}
+
+/* ************联系方式************** */
+.lianxi .lianxi-1 {
+    text-align: center;
+}
+
+.lianxi .lianxi-1 span {
+    font-weight: bold;
+    font-size: 25px;
+    color: #aaa;
+}
+
+.lianxi .lianxi-1 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "黑体";
+    margin-bottom: 70px;
+}
+
+.lianxi .lianxi-2 .col {
+    text-align: center;
+    width: 380px;
+    height: 300px;
+}
+
+.lianxi .lianxi-2 i {
+    font-size: 60px;
+}
+
+.lianxi .lianxi-2 p {
+    margin-top: 20px;
+}
+
+/*  *************页尾**************/
+.yewei {
+    text-align: center;
+    height: 300px;
+}
+
+.yewei a {
+    /* text-decoration: none; */
+    color: aliceblue;
+}

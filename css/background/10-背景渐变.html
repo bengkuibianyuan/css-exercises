@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景渐变</title>
+    <style>
+       .box{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 20px dotted black;
+        /* background-repeat: no-repeat; */
+       }
+       /* 线性：linear-gradient(渐变角度，颜色列表 停顿位置)< */
+       .linear1{
+        background-image: linear-gradient(rgb(129, 163, 225) 20%,rgba(200,200,255,1) 20%, #ccc);
+       }
+       .linear2{
+        background-image: linear-gradient(45deg,rgb(129, 163, 225) 30%,rgba(200,200,255,1) 30%,rgb(165, 213, 152) 150px, #ccc 180px);
+       }
+       .linear3{
+        background-image: linear-gradient(70deg,rgb(129, 163, 225) 30%,
+        rgba(200,200,255,1) 
+        30%,rgb(165, 213, 152) 150px, 
+        #ccc 180px);
+       }
+       .linear5{
+        width: 100%;
+            background-image: linear-gradient( 45deg, 
+            rgb(132, 176, 181) 25%,
+            transparent 25%,
+            transparent 75%,
+            #eee 75%,
+            rgb(78, 138, 165)
+            ),  
+            linear-gradient(
+            -45deg, 
+            rgb(132, 176, 181) 25%,
+            transparent 25%,
+            transparent 75%,
+            #eee 75%,
+            rgb(78, 138, 165)
+            );
+          background-size: 80px 80px;
+       }
+       /* 径向： <h1>径向：radial-gradient(渐变形状（circle，ellipse）)at 渐变位置，颜色列表</h1>
+    <h1>径向：radial-gradient(渐变大小，颜色列表)</h1> */
+       .radial1{
+        background-image: radial-gradient(
+            transparent 25%,
+            transparent 25%,
+            rgba(200,200,255,1) 30%,
+            transparent 75%,
+            #eee 75%,
+            rgb(78, 138, 165)
+        );
+       }
+       .radial2{
+        background-image: radial-gradient(
+           circle at top right,
+           transparent 25%,
+            rgba(200,200,255,1) 30%,
+            transparent 75%,
+            #eee 75%,
+            rgb(201, 212, 218)
+           
+        );
+       }
+       .radial3{
+        background-image: radial-gradient(
+            closest-side,
+            rgb(136, 57, 89) 30%,
+            rgb(43, 127, 166)
+        );
+        width: 400px;
+       }
+       /* 角度渐变：角度渐变：conic-gradient（from 角度 颜色列表）</h1>
+  <h1>J角度渐变：conic-gradient（角度加颜色渐变）</h1> */
+       .conic1{
+        background-image: conic-gradient(
+            rgba(200,200,255,1) 30%,
+            rgb(234, 163, 163) 75%,
+            rgb(78, 138, 165)
+        );
+       }
+       .conic2{
+        background-image: conic-gradient(
+           from 45deg,
+            rgba(200,200,255,1) 30%,
+            rgb(234, 163, 163) 75%,
+            rgb(78, 138, 165)
+        );
+       }
+       .conic3{
+        background-image: conic-gradient(
+         at 50px 50px,
+            rgba(200,200,255,1) 30%,
+            rgb(234, 163, 163) 75%,
+            rgb(78, 138, 165)
+        );
+       }
+       .conic3{
+        background-image: conic-gradient(
+         at 50% 80%,
+            rgba(200,200,255,1) 30%,
+            rgb(234, 163, 163) 75%,
+            rgb(78, 138, 165)
+        );
+       }
+    </style>
+</head>
+<body>
+    <h1>线性：linear-gradient(渐变角度，颜色列表 停顿位置)</h1>
+    <div class="box linear1"></div>
+    <div class="box linear2"></div>
+    <div class="box linear3"></div>
+    <div class="box linear4"></div>
+    <div class="box linear5"></div>
+    <h1>径向：radial-gradient(渐变形状（circle，ellipse）)at 渐变位置，颜色列表</h1>
+    <h1>径向：radial-gradient(渐变大小，颜色列表)</h1>
+  <div class="box radial1"></div>
+  <div class="box radial2"></div>
+  <div class="box radial3"></div>
+  <div class="box radial4"></div>
+  <h1>J角度渐变：conic-gradient（from 角度 颜色列表）</h1>
+  <h1>J角度渐变：conic-gradient（角度加颜色渐变）</h1>
+  <div class="box conic1"></div>
+  <div class="box conic2"></div>
+  <div class="box conic3"></div>
+  <div class="box conic4"></div>
+  <div class="box conic5"></div>
+    <script>
+        console.log(isNaN(undefined))
+    </script>
+</body>
+</html>

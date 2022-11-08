@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 50%; /* 50%参照父级body计算宽度 */
+            background-color: antiquewhite;
+            height: 100%; /* 计算后：0 */
+            height: 100em;/* 计算后：1600px */
+            /*  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <!-- 
+        1.元素的宽度指什么？
+        元素的宽度指元素在文档中占据的空间的大小
+        宽度的高度=内容宽度+内边距+边框+外边距
+
+        2.width属性
+        定义：用于定义元素的宽度
+        （说明：宽度包含外边距，但是width不定义外边距的尺寸）
+
+        3.尺寸属性值的写法（单位）有几种？
+        绝对单位
+        //数字世界里的长度单位
+        px：像素 pixel
+        100px：在任何情况（分辨率）下，都显示为100px。
+        //现实世界中的长度单位
+        cm：厘米
+        mm：毫米
+        pt：磅
+        inch：英寸
+        相对定位:请参照父级的尺寸来计算
+        1.百分比 %：参照父元素计算尺寸
+        2.em：参照当前元素的font-size计算
+        3，rem：参照html的font-size计算
+        4.vh / vw
+     -->
+</body>
+
+</html>

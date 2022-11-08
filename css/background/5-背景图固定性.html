@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景色</title>
+    <style>
+        body {
+            background-image: url('./images/dog.jpg');
+            height: 200vh;
+            /* background-attachment: scroll; 默认值：背景图跟随主视口一起移动,不跟随元素视口一起移动 */
+           /*  background-attachment: fixed;背景图固定，无论是主视口还是元素视口，背景都不会动 */
+            /*background-attachment: local; local:本地背景图跟随元素视口和主视口一起动*/
+
+        }
+
+        .box {
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+            border: 20px dotted black;
+            overflow: auto;
+            background-image: url('./images/bg.jpg');
+            margin-bottom:20px;
+        }
+       .box1{
+        background-attachment: scroll;
+       }
+       .box2{
+        background-attachment: fixed;
+       }
+       .box3{
+        background-attachment: local;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        <p>
+            对我来说
+            风光无限是你跌落尘埃是你，重点是你，不是怎样的你
+        </p>
+        <p>
+            对我来说
+            风光无限是你跌落尘埃是你，重点是你，不是怎样的你
+        </p>
+        <p>
+            对我来说
+            风光无限是你跌落尘埃是你，重点是你，不是怎样的你
+        </p>
+        <p>
+            对我来说
+            风光无限是你跌落尘埃是你，重点是你，不是怎样的你
+        </p>
+    </div>
+    <div class="box box2">
+        <p>他成了一座活着的墓碑，心上镌刻的都是亡魂的名字</p>
+        <p>
+            对我来说
+            风光无限是你跌落尘埃是你，重点是你，不是怎样的你
+        </p>
+        <p>
+            对我来说
+            风光无限是你跌落尘埃是你，重点是你，不是怎样的你
+        </p>
+        <p>
+            对我来说
+            风光无限是你跌落尘埃是你，重点是你，不是怎样的你
+        </p>
+        <p>
+            对我来说
+            风光无限是你跌落尘埃是你，重点是你，不是怎样的你
+        </p>
+    </div>
+    <div class="box box3">
+        <p> 昨日已死，君当自宽</p>
+        <p>他成了一座活着的墓碑，心上镌刻的都是亡魂的名字</p>
+        <p>他成了一座活着的墓碑，心上镌刻的都是亡魂的名字</p>
+        <p>他成了一座活着的墓碑，心上镌刻的都是亡魂的名字</p>
+        <p>他成了一座活着的墓碑，心上镌刻的都是亡魂的名字</p>
+        <p>他成了一座活着的墓碑，心上镌刻的都是亡魂的名字</p>
+    </div>
+
+</body>
+
+</html>
